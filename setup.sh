@@ -59,6 +59,8 @@ function setup_text_editors() {
     wget -O $VSCODE_INSTALL_PATH "https://code.visualstudio.com/sha/download?build=stable&os=linux-x64"
     wget -O $VSCODE_INSTALL_PATH/code-stable.png "https://code.visualstudio.com/assets/images/code-stable.png"
     echo "PATH:$PATH:$VSCODE_INSTALL_PATH/bin"  | tee -a $USER_PROFILE
+
+    # TODO: Add Desktop Entry by detecting desktop environment
 }
 
 function install_imp_packages() {
