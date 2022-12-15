@@ -50,7 +50,7 @@ function setup_text_editors() {
     
     echo "[+] Creating .vimrc in $HOME"
     if [! test -f $HOME/.vimrc]; then
-        cp .vimrc $HOME/.vimrc
+        cp vimrc $HOME/.vimrc
     else
         echo "[+] $HOME/.vimrc already exists, leaving it untouched"
     fi
