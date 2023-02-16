@@ -15,6 +15,7 @@ set expandtab
 
 " show line numbers
 set number
+set relativenumber
 
 " Highlight search results
 set hlsearch
@@ -29,3 +30,35 @@ set noswapfile
 
 set ai "Auto indent
 set si "Smart indent
+
+" Highlight the current line
+set cursorline
+
+" Enable incremental search, where Vim highlights matches as you type
+set incsearch
+
+" Enable case-insensitive search
+set ignorecase
+set smartcase
+
+"Enable undo tree for better undo/redo navigation
+set undofile
+set undodir=~/.vim/undodir
+
+" Automatically close brackets, quotes, etc.
+inoremap " ""<left>
+inoremap ' ''<left>
+inoremap ( ()<left>
+inoremap [ []<left>
+inoremap { {}<left>
+inoremap {<CR> {<CR>}<ESC>O
+
+" Map the leader key to space
+let mapleader = "\<Space>"
+
+" Define some custom mappings using the leader key
+nnoremap <leader>s :w<CR>
+nnoremap <leader>q :q<CR>
+nnoremap <leader>x :x<CR>
+nnoremap <leader>e :Ex<CR>
+
